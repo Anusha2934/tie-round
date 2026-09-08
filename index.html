@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>टक्कर - Tie Round</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="stage">
+
+    <!-- HOME SCREEN -->
+    <section id="screen-home" class="screen active">
+      <img class="gov-logo" src="logo.png" alt="Income Tax Department emblem">
+
+      <div class="corner-signature">
+        त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी
+      </div>
+
+      <h1 class="pixel-title">
+        <span class="title-hi-line">
+          टक्कर
+        </span>
+        TIE ROUND
+      </h1>
+
+      <button class="pixel-btn" id="btn-start">
+        शुरू
+      </button>
+
+      <div class="sunflower">
+        <div class="stem"></div>
+        <div class="leaf l1"></div>
+        <div class="leaf l2"></div>
+        <div class="bloom"></div>
+      </div>
+
+      <div class="mountains"></div>
+      <div class="ground"></div>
+    </section>
+
+
+    <!-- LEVEL SELECT SCREEN -->
+    <section id="screen-levels" class="screen">
+      <img class="gov-logo" src="logo.png" alt="Income Tax Department emblem">
+
+      <div class="back-btn" id="btn-back-to-home" role="button" tabindex="0" aria-label="Back to home">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 4 5 12l10 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="corner-signature">
+        त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          SELECT A QUESTION
+        </div>
+        <div class="level-grid" id="level-grid"></div>
+      </div>
+
+      <div class="ground"></div>
+    </section>
+
+
+    <!-- QUESTION PREVIEW SCREEN -->
+    <section id="screen-question-preview" class="screen">
+      <img class="watermark-logo" src="logo.png" alt="">
+
+      <div class="back-btn" id="btn-back-to-levels-3" role="button" tabindex="0" aria-label="Back to levels">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 4 5 12l10 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="home-btn" id="btn-home-from-question" role="button" tabindex="0" aria-label="Go to levels">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 11.5 12 4l9 7.5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.5 10.5V20h13v-9.5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="corner-signature">
+        त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी
+      </div>
+
+      <div class="q-container">
+        <div class="question-card">
+          <h2 class="q-title" id="preview-q-text"></h2>
+        </div>
+
+        <button class="btn-uttar" id="btn-show-answer">
+          उत्तर
+        </button>
+      </div>
+
+      <div class="ground"></div>
+    </section>
+
+
+    <!-- ANSWER SCREEN -->
+    <section id="screen-answer-page" class="screen">
+      <img class="watermark-logo" src="logo.png" alt="">
+
+      <div class="back-btn" id="btn-back-to-preview-4" role="button" tabindex="0" aria-label="Back to question preview">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 4 5 12l10 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="home-btn" id="btn-home-from-answer" role="button" tabindex="0" aria-label="Go to levels">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 11.5 12 4l9 7.5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.5 10.5V20h13v-9.5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="corner-signature">
+        त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी
+      </div>
+
+      <div class="q-container">
+        <div class="question-card">
+          <h2 class="q-title" id="answer-q-text"></h2>
+        </div>
+
+        <div class="answer-card" id="answer-card-text"></div>
+      </div>
+
+      <div class="ground"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
